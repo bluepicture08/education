@@ -1,0 +1,8 @@
+내가 쓴 글
+<a href="{% url 'search'%}">검색하러가기</a>
+
+{% for post in posts.all %}
+<h1>제목: {{post.title}}</h1>
+<p>날짜: {{post.pub_date}}</p>
+<p>내용: {{post.content}}</p>
+{% endfor %}
